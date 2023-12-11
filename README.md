@@ -55,3 +55,18 @@ Connect to the MySQL database using `mysql-connector-python`. Fetch the data int
 
 Ensure the solution is secure, efficient, and user-friendly. Thoroughly test the solution before deploying the dashboard publicly, making it accessible to users.
 
+
+## Documentation
+
+The detailed documentation for this project can be found [here](https://drive.google.com/file/d/1VBRecdnRpbutknJLNZQC4f1bc1eKWdsw/view).
+
+## Dataset
+
+The dataset used offical phonepe repo in this project can be accessed [here](https://github.com/PhonePe/pulse.git).
+
+## Inspired From
+- [Phonepe offical](https://www.phonepe.com/pulse/explore/transaction/2022/4/) - Description or explanation of how it inspired the project.
+
+
+
+
