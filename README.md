@@ -1,12 +1,10 @@
 
-# Phonepe-pulse
+# Phonepe-pulse | Phonepe Pulse Dashboard Project
 
 Phonepe Pulse Data Visualization and Exploration:
 A User-Friendly Tool Using Streamlit and Plotly
 ____________________
 
-
-# Phonepe Pulse Dashboard Project
 
 ## Overview
 
