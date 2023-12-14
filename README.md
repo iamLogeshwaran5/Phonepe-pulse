@@ -67,6 +67,10 @@ The dataset used offical phonepe repo in this project can be accessed [here](htt
 ## Inspired From
 - [Phonepe offical](https://www.phonepe.com/pulse/explore/transaction/2022/4/) - Description or explanation of how it inspired the project.
 
+## Demo
+
+project [video](https://youtu.be/98KPLgtHfhA).
+
 
 
 
