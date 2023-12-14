@@ -66,11 +66,28 @@ if selected == "Home":
             "### :violet[Overview :] This visualization allows you to explore and analyze PhonePe's Pulse data from 2018 to 2022. With interactive charts and various metrics to choose, you can gain insights into PhonePe's business performance and growth over time.")
 
     with col2:
-        st.write(" ")
-        st.write(" ")
-        st.write(" ")
-        st.write(" ")
-        st.image("https://blog.cdn.cmarix.com/blog/wp-content/uploads/2018/05/P2P-3.gif", width=500)
+        st.title("Created by Logeshwaran")
+
+        st.write("Please find below the contact information:")
+
+        # Container to hold contact information
+        st.markdown(
+            """
+            <div style='display: flex; flex-direction: column; align-items: center;'>
+                <div style='display: flex; justify-content: center; align-items: center; margin-bottom: 20px;'>
+                    <a href='https://www.linkedin.com/in/logeshwarandatapro/' target='_blank' style='margin-right: 20px;'>
+                        <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg' alt='LinkedIn' style='width: 50px; height: 50px;'>
+                    </a>
+                    <a href='https://github.com/iamLogeshwaran5' target='_blank'>
+                        <img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' alt='GitHub' style='width: 50px; height: 50px;'>
+                    </a>
+                </div>
+                <p style='font-size: 16px;'>📧 Email: logeshwaran1478@gmail.com</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        #st.image("https://blog.cdn.cmarix.com/blog/wp-content/uploads/2018/05/P2P-3.gif", width=500)
 
 # MENU 2 - CHARTS
 if selected == "Charts":
@@ -80,7 +97,7 @@ if selected == "Charts":
     colum1, colum2 = st.columns([1, 1.5], gap="large")
 
     with colum1:
-        st.image("")
+        st.image("https://media0.giphy.com/media/MetIC06cMWOpaMpV7P/giphy.gif?cid=ecf05e47lx2sy9snsyal0sui6fczdl6gq386cvc1zwijrdm7&ep=v1_stickers_search&rid=giphy.gif&ct=s")
     with colum2:
         st.markdown("## :violet[Info]")
         st.markdown(
@@ -195,7 +212,7 @@ if selected == "Data Visualization":
             mycursor.execute(
                 f"select state, sum(count) as Total_Transactions, sum(amount) as Total_amount from map_trans where year = {Year} and quarter = {Quarter} group by state order by state")
             df1 = pd.DataFrame(mycursor.fetchall(), columns=['State', 'Total_Transactions', 'Total_amount'])
-            df2 = pd.read_csv(r'C:\Users\Lenovo\Desktop\dw\csv\state name data\Statenames.csv')
+            df2 = pd.read_csv(r'D:\project\Phonepe-pulse\Data_source\csv\state name data\Statenames.csv')
             df1.State = df2
 
             fig = px.choropleth(df1,
@@ -214,7 +231,7 @@ if selected == "Data Visualization":
             mycursor.execute(
                 f"select state, sum(count) as Total_Transactions, sum(amount) as Total_amount from map_trans where year = {Year} and quarter = {Quarter} group by state order by state")
             df1 = pd.DataFrame(mycursor.fetchall(), columns=['State', 'Total_Transactions', 'Total_amount'])
-            df2 = pd.read_csv(r'C:\Users\Lenovo\Desktop\dw\csv\state name data\Statenames.csv')
+            df2 = pd.read_csv(r'D:\project\Phonepe-pulse\Data_source\csv\state name data\Statenames.csv')
             df1.Total_Transactions = df1.Total_Transactions.astype(int)
             df1.State = df2
 
